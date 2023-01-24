@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+    defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center py-3">
+          <h1>
+            <span>
+              🦒Animal 🗡️Murder 🐛Mystery
+            </span>
+            <span>
+              <button class="btn btn-danger" onclick="accuse()">Accuse</button>
+            </span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 id="animals">
+            This is some cool text
+          </h2>
+          <h3 id="clues"></h3>
+          <h4>
+            <span>
+              <button class="btn btn-secondary" onclick="drawAnimals(animals)">Show me all the babyzzz</button>
+            </span>
+            <span>
+              <button class="btn btn-secondary" onclick="filterAnimalsByTeeth()">Show me the toothy boyzzz</button>
+            </span>
+            <span>
+              <button class="btn btn-secondary" onclick="filterAnimalsByClaws()">Show me the nail girlzzzz</button>
+            </span>
+            <span>
+              <button class="btn btn-success" onclick="filterByDiet('vegetables')">Show me the veggie
+                loverzzz</button>
+            </span>
+            <span>
+              <button class="btn btn-danger" onclick="filterByDiet('meats')">Show me the meat
+                loverzzz</button>
+            </span>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
