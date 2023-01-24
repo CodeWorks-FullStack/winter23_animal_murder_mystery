@@ -33,14 +33,20 @@ let cats = [
 
 
 // initializer, comparison, afterthought
+for (let i = 0; i < cats.length; i++) {
+  let cat = cats[i]
+  // console.log('Name:', cat.name);
+  // console.log('Tail Length', cat.tailLength)
+}
 
+// backwards for loop
 for (let i = cats.length - 1; i >= 0; i--) {
   let cat = cats[i]
   // console.log('Name:', cat.name);
   // console.log('Tail Length', cat.tailLength)
 }
 
-// NOTE does the exact same thing as the forLoop on line 35
+// NOTE does the exact same thing as the forLoop on line 36
 
 cats.forEach(cat => {
   // console.log('Name:', cat.name);
@@ -306,14 +312,17 @@ function drawAnimals(array) {
   let animalElement = document.getElementById('animals')
   // console.log(animalElement);
   let animalLineup = ''
-  // NOTE injecting text
+  // NOTE adding text to animalLineup variable
   // array.forEach(animal => animalLineup += animal.emoji)
+
+  // NOTE injecting text inside DOM
   // animalElement.innerText = animalLineup
 
+  // NOTE adding HTML text to animalLineup variable
   array.forEach(animal => {
     animalLineup += `<span title="${animal.name}">${animal.emoji}</span>`
   })
-
+  // NOTE injecting HTML inside DOM
   animalElement.innerHTML = animalLineup
 }
 
